@@ -14,7 +14,7 @@ RUN pip install poetry
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
 
-# Копируйте исходный код в контейнер
+
 COPY ./app /app/app
 
 
